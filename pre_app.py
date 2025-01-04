@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 # Title of the App
-st.title("Procurement Operations Dashboard")
+st.title("Demands Dashboard")
 
 # Sidebar for uploading data
 st.sidebar.header("Upload Procurement Data")
