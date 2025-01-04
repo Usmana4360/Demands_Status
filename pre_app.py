@@ -5,7 +5,7 @@ import streamlit as st
 st.title("Demands Dashboard")
 
 # Sidebar for uploading data
-st.sidebar.header("Upload Procurement Data")
+st.sidebar.header("Upload Data")
 uploaded_file = st.sidebar.file_uploader("Upload a CSV file", type=["csv"])
 
 if uploaded_file is not None:
@@ -15,7 +15,7 @@ if uploaded_file is not None:
     st.sidebar.success("File uploaded successfully!")
 
     # Display raw data
-    st.subheader("Procurement Data")
+    st.subheader("Demands Data")
     st.dataframe(df)
 
     # Key Performance Indicators (KPIs)
